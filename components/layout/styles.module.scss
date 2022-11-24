@@ -61,7 +61,9 @@ $min_padding: 20px;
     .Title {
       margin-top: 20px;
       padding-left: 20px;
+      padding-right: 4px;
       padding-top: 150px;
+      padding-bottom: 10px;
       background-image: url('/rawpixel-744342-unsplash.jpeg');
       background-repeat: no-repeat;
       background-position: center;
@@ -71,6 +73,19 @@ $min_padding: 20px;
       font-size: 3em;
       font-weight: 500;
       text-shadow: 0px 0px 10px #0009, 0px 0px 2px #000;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+
+      &::after {
+        content: "Photo by rawpixel on Unsplash";
+        font-size: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        padding-bottom: 20px;
+      }
     }
 
     .Subtitle {
