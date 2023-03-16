@@ -33,3 +33,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+#vs code
+/.vscode
+
+#DB SQLITE
+/db.sqlite
