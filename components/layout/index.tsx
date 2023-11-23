@@ -21,9 +21,9 @@ const Layout: FunctionComponent<Props> = (props) => {
         </div>
       </header>
       <nav className={styles.MainMenu}>
-          <Link href="/"><a className={(asPath === '/') ? styles.ActiveMenuItem : styles.MenuItem}>About us</a></Link>
-          <Link href="/copyright"><a className={(asPath === '/copyright') ? styles.ActiveMenuItem : styles.MenuItem}>About copyright</a></Link>
-          <Link href="/contact"><a className={(asPath === '/contact') ? styles.ActiveMenuItem : styles.MenuItem}>Contact</a></Link>
+          <Link href="/" className={(asPath === '/') ? styles.ActiveMenuItem : styles.MenuItem}>About us</Link>
+          <Link href="/copyright" className={(asPath === '/copyright') ? styles.ActiveMenuItem : styles.MenuItem}>About copyright</Link>
+          <Link href="/contact" className={(asPath === '/contact') ? styles.ActiveMenuItem : styles.MenuItem}>Contact</Link>
         </nav>
       <main>
         <h1 className={styles.Title}>{props.title}</h1>
