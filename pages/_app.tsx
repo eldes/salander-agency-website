@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       case '/': return 'About Us';
       case '/copyright': return 'About Copyright';
       case '/contact': return 'Contact';
-      default: return 'About Us';
+      default: return 'Page not found';
     }
   })();
   return (
